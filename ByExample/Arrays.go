@@ -22,7 +22,7 @@ func main() {
 	// Pode declarar todos os valores ao criar
 	b := [5]int{1, 2, 3, 4, 5}
 	fmt.Println("Lotado:", b)
-	// Eles sao multidimencionais, mas pode usar estruturas para torna-los bidimencionais
+	// Eles sao unidimensionais, mas pode usar estruturas para torna-los bidimensionais
 	var doisV [2][3]int
 	for i := 0; i < 2; i++ {
 		for j := 0; j < 3; j++ {

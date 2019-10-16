@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config version="1.0">
+	<features>
+		<feature name="FileScan" action="1"/>
+		<feature name="UserControl" action="1"/>
+		<feature name="Antiphishing" action="1"/>
+		<feature name="Firewall" action="1"/>
+		<feature name="UpdateServer" action="0"/>
+		<feature name="BehavioralScan" action="1"/>
+		<feature name="TrafficScan" action="1"/>
+		<feature name="MailServers" action="0"/>
+		<feature name="DataLossPrevention" action="1"/>
+		<feature name="ApplicationControl" action="1"/>
+		<feature name="PowerUser" action="1"/>
+		<feature name="MailServersForSandboxAnalyser" action="0"/> 
+		<feature name="EventCorrelator" action="0"/> 
+		<feature name="VolumeEncryption" action="0"/> 
+		<feature name="PatchManagement" action="0"/>
+		<feature name="PatchManagementServer" action="0"/> 
+	<feature name="Introspection" action="0"/><feature name="AntiExploit" action="0"/></features>
+	
+	<serverAddress strVar="EpagServer">https://srsdtc040.seniorsolution.com.br:8443/hydra</serverAddress>
+	<customerId strVar="EpagCustId">5b48f20b2c7661a8dc8b4567</customerId>
+	<connTime strVar="EpagConnTime">1800</connTime>
+	<userId strVar="EpagUserId">5b48f20c2c7661a8dc8b4579</userId>
+
+	<downloadUrl strVar="DownloadUrl"><![CDATA[https://srsdtc040.seniorsolution.com.br:8443/Packages/BSTWL/0]]></downloadUrl>
+
+	<installPath strVar="InstallDir"><![CDATA[%PROGRAMFILES%]]></installPath>
+
+	<localization strVar="localization">pt-BR</localization>
+	<arrakisUpdateServer strVar="ArrakisUpdateServer">srsdtc040.seniorsolution.com.br:7074</arrakisUpdateServer>
+
+	<rebootIfNeeded var="RebootIfNeeded">0</rebootIfNeeded>
+	<forceResumeAfterReboot var="ForceResumeAfterReboot">0</forceResumeAfterReboot>
+
+	<disableScanBeforeInstall var="DisableScanBeforeInstall">1</disableScanBeforeInstall>
+	<encryptedPass/>
+
+	<remoteScanSettings>
+		<servers>
+			
+		</servers>
+		<enableRemoteScan>0</enableRemoteScan>
+	</remoteScanSettings>
+
+	<scanType strVar="ScanType">light</scanType>
+
+	<scanTypeDetection>
+		<detectEC2 scanType="full" enableRemoteScan="0" detectEC2Url="http://169.254.169.254/latest/meta-data/instance-id">0</detectEC2>
+        <detectAzure scanType="full" enableRemoteScan="0" detectAzureUrl="http://169.254.169.254/metadata/instance/compute/vmId?api-version=2017-08-01&amp;format=text">0</detectAzure>
+		<detectVM scanType="light" enableRemoteScan="0">1</detectVM>
+		<detectSlowMachine scanType="light" enableRemoteScan="0">0</detectSlowMachine>
+
+	</scanTypeDetection>
+
+	<appId var="AppIdProduct">12</appId>
+	<productName strVar="ProductName"><![CDATA[Bitdefender Endpoint Security Tools]]></productName>
+	<ArrakisProductName strVar="ArrakisProductName"><![CDATA[Endpoint Update Server]]></ArrakisProductName>
+
+	<competitorRemoval>
+		<execute mode="always"/> 
+		<useExternal value="yes"/>
+		<exclude>
+        	<!--Ex: < product name="" /> -->
+    	</exclude>
+	</competitorRemoval>
+
+	<trackingInfo>
+		<key>26SuZaIK83MkicK8vj7kyLXx3n/nh7F6icUfVixkLIY=</key>
+		<partnerId>84</partnerId>
+		<productId>2733</productId>
+	</trackingInfo>
+	
+	<keepSettings var="KeepSettings">1</keepSettings>
+	<keepFeatures var="KeepFeatures">0</keepFeatures>
+
+	<proxyServer strVar="ProxyServer"/>
+
+	<proxyPort strVar="ProxyPort"/>
+
+	<proxyUser strVar="ProxyUser"/>
+
+	<proxyPass strVar="ProxyPass"/>
+
+	<installLink strVar="InstallLink"/>
+
+	<rebootAfterEachRemovedProduct var="RebootAfterEachRemovedProduct">0</rebootAfterEachRemovedProduct>
+
+	<epagCustomField strVar="EpagCustomField"><![CDATA[{"ComputersFolder":"5c7443532c766136f98b456b"}]]></epagCustomField> 
+
+	<statusLink strVar="StatusLink">https://srsdtc040.seniorsolution.com.br:8443/tasks/state</statusLink>
+
+	<submitDumps var="SubmitDumps">0</submitDumps>
+	<submitQuar var="SubmitQuar">0</submitQuar>
+	<submitQuarInterval var="SubmitQuarInterval">3600</submitQuarInterval>
+	<submitSuspicious var="SubmitSuspicious">0</submitSuspicious>
+
+	<epagConfig>
+		<authToken strVar="EpagToken"/>
+	</epagConfig>
+
+</config>
